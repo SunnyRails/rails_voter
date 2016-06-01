@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.2.6"
-  s.add_dependency "haml-rails"
   s.add_dependency "decent_exposure", "~> 3.0.0.beta2"
   s.add_dependency "draper", "~> 1.3"
 
