@@ -141,7 +141,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.11)
+  bundler
   pry-byebug
   rails_voter!
   rake (~> 10.0)
