@@ -1,4 +1,4 @@
-require "rails_voter/engine"
+require 'rails_voter/engine'
 
 module RailsVoter
 end
