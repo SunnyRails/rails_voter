@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 module RailsVoter
   RSpec.describe VotingResult, type: :model do
