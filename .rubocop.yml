@@ -1,7 +1,7 @@
 AllCops:
   Exclude:
     - "vendor/**/*"
-    - "db/schema.rb"
+    - "spec/dummy/db/schema.rb"
   UseCache: false
 Style/CollectionMethods:
   Description: Preferred collection methods.
@@ -241,3 +241,11 @@ Lint/LiteralInCondition:
 Lint/LiteralInInterpolation:
   Description: Checks for literals used in interpolation.
   Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https  
