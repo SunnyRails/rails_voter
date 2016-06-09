@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160609154729) do
+ActiveRecord::Schema.define(version: 20160609160016) do
 
   create_table "rails_voter_ballot_form_details", force: :cascade do |t|
     t.string   "name"
@@ -27,5 +27,13 @@ ActiveRecord::Schema.define(version: 20160609154729) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "rails_voter_voting_results", force: :cascade do |t|
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.integer  "ballot_form_detail_id"
+  end
+
+  add_index "rails_voter_voting_results", ["ballot_form_detail_id"], name: "index_rails_voter_voting_results_on_ballot_form_detail_id"
 
 end
