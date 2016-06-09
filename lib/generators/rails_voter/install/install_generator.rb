@@ -1,6 +1,5 @@
 module RailsVoter
   class InstallGenerator < Rails::Generators::Base
-
     def add_routes
       route "mount RailsVoter::Engine, at: \"/rails_voter\""
     end
