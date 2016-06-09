@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount RailsVoter::Engine => '/rails_voter'
+  mount RailsVoter::Engine, at: "/rails_voter"
 end
