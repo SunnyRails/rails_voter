@@ -1,0 +1,6 @@
+= link_to 'add', new_ballot_form_path
+
+- ballot_forms.each do |bf|
+  %p
+    = bf.name
+    = link_to 'edit', edit_ballot_form_path(bf)

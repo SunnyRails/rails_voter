@@ -1,5 +1,4 @@
 require_dependency "rails_voter/application_controller"
-require_dependency "decent_exposure"
 
 module RailsVoter
   class BallotFormsController < ApplicationController
