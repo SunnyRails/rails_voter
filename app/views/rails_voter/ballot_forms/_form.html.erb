@@ -1,4 +1,5 @@
 <%= form_for ballot_form do |f| %>
+  <%= f.label  t('rails_voter.ballot_form.name') %>
   <%= f.text_field :name %>
   <%= f.submit %>
 <% end %>
