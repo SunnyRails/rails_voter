@@ -5,6 +5,10 @@ module RailsVoter
     expose :ballot_forms, -> { BallotForm.all }
     expose :ballot_form, model: RailsVoter::BallotForm
 
+    def new
+      ballot_form.ballot_form_details.new
+    end
+
     def create
       if ballot_form.save
         redirect_to ballot_forms_path
@@ -24,7 +28,7 @@ module RailsVoter
     private
 
     def ballot_form_params
-      params.require(:ballot_form).permit(:name)
+      params.require(:ballot_form).permit(:name, ballot_form_details_attributes: [:name, :id])
     end
   end
 end
