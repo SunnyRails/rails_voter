@@ -1,8 +1,7 @@
-require 'rails_helper'
+require "rails_helper"
 
 module RailsVoter
   RSpec.describe BallotFormsController, type: :controller do
-
     # describe "GET #index" do
     #   it "returns http success" do
     #     get :index
