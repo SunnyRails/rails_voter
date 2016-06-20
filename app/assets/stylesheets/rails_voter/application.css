@@ -11,8 +11,7 @@
  * file per style scope.
  *
   *= require bootstrap
-  *= require font-awesome
-  *= require ionicons
+  *= require font-awsome
   *= require admin-lte
   *= require_tree .
   *= require_self

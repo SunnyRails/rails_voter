@@ -21,8 +21,15 @@ Gem::Specification.new do |s|
   s.add_dependency "decent_exposure", "~> 3.0.0.beta2"
   s.add_dependency "draper", "~> 1.3"
   s.add_dependency "haml-rails", "~> 0.9"
-  # s.add_dependency "rails-assets-admin-lte" # , "~> 2.3.3"
-  s.add_dependency "adminlte-rails"
+
+  s.add_dependency "rails-assets-bootstrap"
+  s.add_dependency "jquery-rails", "~> 4.1", ">= 4.1.1"
+  s.add_dependency "rails-assets-admin-lte" # , "~> 2.3.3"
+  s.add_dependency "sass-rails", "~> 5.0"
+  s.add_dependency "uglifier", ">= 1.3.0"
+  s.add_dependency "coffee-rails", "~> 4.1.0"
+  s.add_dependency "rails-assets-slimScroll"
+  s.add_dependency "rails-assets-font-awsome"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "bundler", "~> 1.11"

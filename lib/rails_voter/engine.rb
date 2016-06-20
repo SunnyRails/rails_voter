@@ -1,5 +1,11 @@
 module RailsVoter
   class Engine < ::Rails::Engine
+    require "jquery-rails"
+    require "rails-assets-bootstrap"
+    require "rails-assets-font-awsome"
+    require "rails-assets-admin-lte"
+    require "rails-assets-slimScroll"
+
     isolate_namespace RailsVoter
 
     config.generators do |g|
