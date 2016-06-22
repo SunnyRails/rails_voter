@@ -80,6 +80,8 @@ GEM
     factory_girl_rails (4.7.0)
       factory_girl (~> 4.7.0)
       railties (>= 3.0.0)
+    faker (1.6.3)
+      i18n (~> 0.5)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     haml (4.0.7)
@@ -205,6 +207,7 @@ DEPENDENCIES
   bundler (~> 1.11)
   capybara
   factory_girl_rails
+  faker
   pry-byebug
   rails_voter!
   rake (~> 10.0)
