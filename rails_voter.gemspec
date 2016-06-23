@@ -17,10 +17,11 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency "rails", "~> 4.2.6"
+  s.add_dependency "rails" # , "~> 4.2.6"
   s.add_dependency "decent_exposure", "~> 3.0.0.beta2"
   s.add_dependency "draper", "~> 1.3"
   s.add_dependency "haml-rails", "~> 0.9"
+  s.add_dependency "faker"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "bundler", "~> 1.11"
@@ -29,7 +30,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "capybara"
   s.add_development_dependency "factory_girl_rails"
   s.add_development_dependency "pry-byebug"
-  s.add_development_dependency "faker"
   s.add_development_dependency "better_errors"
   s.add_development_dependency "binding_of_caller"
   s.add_development_dependency "rubocop"
