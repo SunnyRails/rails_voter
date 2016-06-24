@@ -1,3 +1,5 @@
+require "faker"
+
 separator = ">>>>>>>><<<<<<<<<<"
 
 p separator
