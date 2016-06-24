@@ -6,7 +6,9 @@ module RailsVoter
     expose :ballot_form, model: RailsVoter::BallotForm
 
     def new
-      ballot_form.ballot_form_details.new
+      10.times do
+        ballot_form.ballot_form_details.new
+      end
     end
 
     def create
