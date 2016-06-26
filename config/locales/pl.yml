@@ -1,4 +1,4 @@
 pl:
   rails_voter:
     ballot_form:
-      name: "Nazwa"
+      name: "Tytuł formularza wyborczego"
