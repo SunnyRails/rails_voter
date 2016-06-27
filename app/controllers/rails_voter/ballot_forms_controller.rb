@@ -4,6 +4,9 @@ module RailsVoter
   class BallotFormsController < ApplicationController
     expose :ballot_forms, -> { BallotForm.all }
     expose :ballot_form, model: RailsVoter::BallotForm
+    expose :ballot_form_details, -> { BallotFormDetail.where(ballot_form_id: params[:id]) }
+    expose :voting_result, -> { RailsVoter::VotingResult.new }
+    expose :voting_result_show, -> { RailsVoter::VotingResult.show(params[:id]) }
 
     def new
       10.times do
