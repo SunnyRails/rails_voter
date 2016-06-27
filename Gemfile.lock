@@ -9,7 +9,6 @@ PATH
       haml-rails (~> 0.9)
       jquery-rails (~> 4.1)
       rails
-      sprockets-rails
 
 GEM
   remote: https://rubygems.org/

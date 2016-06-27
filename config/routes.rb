@@ -6,5 +6,5 @@ RailsVoter::Engine.routes.draw do
 
   resources :voting_results, only: [:create]
 
-  root to: 'ballot_forms#index'
+  root to: "ballot_forms#index"
 end
