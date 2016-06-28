@@ -8,7 +8,7 @@ PATH
       faker
       haml-rails (~> 0.9)
       jquery-rails (~> 4.1)
-      rails
+      rails (~> 4.2.6)
 
 GEM
   remote: https://rubygems.org/
