@@ -1,1 +1,0 @@
-Witam, wszystkich ambitnych Rails'owców :)
