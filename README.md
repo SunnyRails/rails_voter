@@ -11,7 +11,7 @@ Add Rails-Voter gem to your Gemfile:
 
 ```ruby
 gem 'rails_voter', github: 'SunnyRails/rails_voter' (current version)
-gem 'rails_voter', '~> 0.0.1' (test)
+gem 'rails_voter' (test)
 ```
 
 Run `bundle install`

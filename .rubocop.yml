@@ -251,8 +251,8 @@ Metrics/LineLength:
     - https  
 
 Style/FrozenStringLiteralComment:
-  EnforcedStyle: when_needed
   Enabled: false
+  EnforcedStyle: when_needed
   SupportedStyles:
     # `when_needed` will add the frozen string literal comment to files
     # only when the `TargetRubyVersion` is set to 2.3+.
