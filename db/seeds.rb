@@ -11,6 +11,7 @@ p separator
     3.times do
       bfd.voting_results.create
     end
+  end
 end
 
 message = "5 ballot forms, 10 ballot form details and 30 voting results created."
