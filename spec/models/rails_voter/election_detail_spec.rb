@@ -9,6 +9,6 @@ module RailsVoter
 
     describe 'associations' do
       it { is_expected.to belong_to :election }
-      it { is_exepcted.to has_many :voting_results }
+      it { is_expected.to have_many :voting_results }
     end  end
 end

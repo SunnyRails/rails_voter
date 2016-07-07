@@ -199,6 +199,8 @@ GEM
       sexp_processor (~> 4.1)
     sass (3.4.22)
     sexp_processor (4.7.0)
+    shoulda-matchers (3.1.1)
+      activesupport (>= 4.0.0)
     slop (3.6.0)
     sprockets (3.6.3)
       concurrent-ruby (~> 1.0)
@@ -233,6 +235,7 @@ DEPENDENCIES
   rake (~> 10.0)
   rspec-rails (~> 3.0)
   rubocop
+  shoulda-matchers (~> 3.1)
   sqlite3
 
 BUNDLED WITH
