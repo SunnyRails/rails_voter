@@ -1,9 +1,0 @@
-= form_for ballot_form do |f|
-  %p
-    = f.label  t('rails_voter.ballot_form.name')
-    = f.text_field :name
-  %p
-    = render 'ballot_form_detail_record', f: f
-    / = render 'ballot_form_detail_record', f: f
-  %p
-  = f.submit

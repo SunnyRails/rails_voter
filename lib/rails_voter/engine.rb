@@ -1,5 +1,8 @@
 module RailsVoter
   class Engine < ::Rails::Engine
+    require "bootstrap-sass"
+    require "jquery-rails"
+
     isolate_namespace RailsVoter
 
     config.generators do |g|

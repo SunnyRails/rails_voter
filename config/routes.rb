@@ -1,10 +1,10 @@
 RailsVoter::Engine.routes.draw do
-  resources :ballot_forms do
+  resources :elections do
     get "vote", on: :member
     get "show_result", on: :member
   end
 
   resources :voting_results, only: [:create]
 
-  root to: 'ballot_forms#index'
+  root to: "elections#index"
 end

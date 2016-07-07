@@ -1,0 +1,5 @@
+%h2= election.name
+
+- voting_result_show.each do |k, v|
+  %p
+    #{election_details.find(k).name} votes: #{v}

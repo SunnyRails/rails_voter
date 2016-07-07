@@ -1,0 +1,9 @@
+= form_for election do |f|
+  %p
+    = f.label  t("rails_voter.election.name")
+    = f.text_field :name
+  %p
+    = render "election_detail_record", f: f
+    / = render "election_detail_record", f: f
+  %p
+  = f.submit

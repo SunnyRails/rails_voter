@@ -11,29 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160608145149) do
+ActiveRecord::Schema.define(version: 20160707143841) do
 
-  create_table "rails_voter_ballot_form_details", force: :cascade do |t|
+  create_table "rails_voter_election_details", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-    t.integer  "ballot_form_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "election_id"
   end
 
-  add_index "rails_voter_ballot_form_details", ["ballot_form_id"], name: "index_rails_voter_ballot_form_details_on_ballot_form_id"
-
-  create_table "rails_voter_ballot_forms", force: :cascade do |t|
+  create_table "rails_voter_elections", force: :cascade do |t|
     t.string   "name",       null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "rails_voter_voting_results", force: :cascade do |t|
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
-    t.integer  "ballot_form_detail_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.integer  "election_detail_id"
   end
 
-  add_index "rails_voter_voting_results", ["ballot_form_detail_id"], name: "index_rails_voter_voting_results_on_ballot_form_detail_id"
+  add_index "rails_voter_voting_results", ["election_detail_id"], name: "index_rails_voter_voting_results_on_election_detail_id"
 
 end
