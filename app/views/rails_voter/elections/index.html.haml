@@ -1,0 +1,8 @@
+= link_to "add", new_election_path
+
+- elections.each do |bf|
+  %p
+    = bf.name
+    = link_to "edit", edit_election_path(bf)
+    = link_to "vote", vote_election_path(bf)
+    = link_to "show result", show_result_election_path(bf)
