@@ -11,7 +11,7 @@ module RailsVoter
     private
 
     def voting_result_params
-      params.require(:voting_result).permit(:ballot_form_detail_id)
+      params.require(:voting_result).permit(:election_detail_id)
     end
   end
 end

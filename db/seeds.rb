@@ -2,17 +2,17 @@ require "faker"
 
 p "Remove seeds"
 RailsVoter::VotingResult.destroy_all
-RailsVoter::BallotFormDetail.destroy_all
-RailsVoter::BallotForm.destroy_all
+RailsVoter::ElectionDetail.destroy_all
+RailsVoter::Election.destroy_all
 
 separator = ">>>>>>>><<<<<<<<<<"
 
 p separator
 
 5.times do
-  bf = RailsVoter::BallotForm.create(name: Faker::StarWars.planet)
+  bf = RailsVoter::Election.create(name: Faker::StarWars.planet)
   2.times do
-    bfd = bf.ballot_form_details.create(name: Faker::StarWars.character)
+    bfd = bf.election_details.create(name: Faker::StarWars.character)
     3.times do
       bfd.voting_results.create
     end
@@ -26,16 +26,16 @@ p separator
 
 p "United States presidential election, 2016 seeds"
 
-bf = RailsVoter::BallotForm.create(name: "United States presidential election, 2016")
+bf = RailsVoter::Election.create(name: "United States presidential election, 2016")
 
-bfd = bf.ballot_form_details.create(name: "Hillary Clinton")
+bfd = bf.election_details.create(name: "Hillary Clinton")
 4.times { bfd.voting_results.create }
 
-bfd = bf.ballot_form_details.create(name: "Donald Trump")
+bfd = bf.election_details.create(name: "Donald Trump")
 3.times { bfd.voting_results.create }
 
-bfd = bf.ballot_form_details.create(name: "Gary Johnson")
+bfd = bf.election_details.create(name: "Gary Johnson")
 2.times { bfd.voting_results.create }
 
-bfd = bf.ballot_form_details.create(name: "Jill Stein")
+bfd = bf.election_details.create(name: "Jill Stein")
 2.times { bfd.voting_results.create }

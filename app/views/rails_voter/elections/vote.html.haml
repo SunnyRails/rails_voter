@@ -1,0 +1,9 @@
+= election.name
+
+= form_for voting_result do |f|
+  - election_details.each do |bfd|
+    %p
+      = f.label :election_detail_id, bfd.name
+      = f.radio_button :election_detail_id, bfd.id
+
+  = f.submit

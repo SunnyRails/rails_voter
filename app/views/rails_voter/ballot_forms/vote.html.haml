@@ -1,9 +1,0 @@
-= ballot_form.name
-
-= form_for voting_result do |f|
-  - ballot_form_details.each do |bfd|
-    %p
-      = f.label :ballot_form_detail_id, bfd.name
-      = f.radio_button :ballot_form_detail_id, bfd.id
-
-  = f.submit
