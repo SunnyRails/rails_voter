@@ -20,8 +20,6 @@ ActiveRecord::Schema.define(version: 20160707143841) do
     t.integer  "election_id"
   end
 
-  add_index "rails_voter_election_details", ["election_id"], name: "index_rails_voter_election_details_on_election_id"
-
   create_table "rails_voter_elections", force: :cascade do |t|
     t.string   "name",       null: false
     t.datetime "created_at", null: false
