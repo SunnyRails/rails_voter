@@ -2,9 +2,20 @@ require "rails_helper"
 
 module RailsVoter
   RSpec.describe Election, type: :model do
-    let(:bf) { create(:rails_voter_election, name: "My sample election form") }
-    it "returns sample name" do
-      expect(bf.name).to eq("My sample election form")
+    describe 'validations' do
+      it { is_exepcted.to validate_presence_of :name }
+    end
+
+    describe 'nested attributes' do
+      it { should accept_nested_attributes_for :election_detail }
+    end
+
+    describe 'datatabase columns' do
+      it { should have_db_column :name }
+    end
+
+    describe 'assocations' do
+      it { is_expected.to belong_to :election_detail }
     end
   end
 end
