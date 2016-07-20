@@ -1,0 +1,10 @@
+<h1>SampleForm#index</h1>
+<p>Find me in app/views/sample_form/index.html.erb</p>
+
+<%= form_tag do %>
+  <%= text_area_tag :content %>
+  <%= submit_tag %>
+<% end %>
+
+<h2>Content</h2>
+<%= @content["content"].html_safe %>
