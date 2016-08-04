@@ -30,6 +30,10 @@ module RailsVoter
       end
     end
 
+    def vote
+      render layout: false
+    end
+
     private
 
     def election_params

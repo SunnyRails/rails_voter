@@ -6,6 +6,7 @@ module RailsVoter
 
     def create
       voting_result.save
+      render layout: false
     end
 
     private
