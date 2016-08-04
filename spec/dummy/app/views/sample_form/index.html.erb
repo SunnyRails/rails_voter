@@ -9,4 +9,4 @@
 <h2>Content</h2>
 <%= @content %>
 
-<%= embed_ballot_form(30) %>
+<%= embed_ballot_form(RailsVoter::Election.last.id) %>
