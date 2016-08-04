@@ -8,6 +8,8 @@ module RailsVoter
     expose :voting_result, -> { RailsVoter::VotingResult.new }
     expose :voting_result_show, -> { RailsVoter::VotingResult.show(params[:id]) }
 
+    before_action :render_layout_false, only: [:vote, :show_result]
+
     def new
       10.times do
         election.election_details.new
@@ -30,14 +32,14 @@ module RailsVoter
       end
     end
 
-    def vote
-      render layout: false
-    end
-
     private
 
     def election_params
       params.require(:election).permit(:name, election_details_attributes: [:name, :id])
+    end
+
+    def render_layout_false
+      render layout: false
     end
   end
 end
