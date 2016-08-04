@@ -1,4 +1,4 @@
-= link_to "add", new_election_path
+= link_to "add", new_election_path, class: "btn btn-success"
 
 - elections.each do |bf|
   %p
@@ -12,4 +12,10 @@
       %pre <%= embed_ballot_form(#{bf.id}) %>
       %p haml:
       %pre = embed_ballot_form(#{bf.id})
+
+      %h4 Add code to your view to display voting result.
+      %p erb:
+      %pre <%= embed_voting_result(#{bf.id}) %>
+      %p haml:
+      %pre = embed_voting_result(#{bf.id})
   %hr
