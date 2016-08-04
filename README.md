@@ -40,6 +40,19 @@ Browse Rails-Voter plugin
 
 http://localhost:3000/rails_voter/
 
+To insert a ballot form or display the voting result use helpers.  
+
+erb:
+``` ruby
+<%= embed_ballot_form(<< Election Id >>) %>
+<%= embed_voting_result(<< Election Id >>) %>
+```
+haml:
+``` ruby
+= embed_ballot_form(<< Election Id >>)
+= embed_voting_result(<< Election Id >>)
+```
+
 License
 ----------------
 This project rocks and uses MIT-LICENSE.
