@@ -2,7 +2,14 @@
 
 - elections.each do |bf|
   %p
-    = bf.name
+    %h2= bf.name
     = link_to "edit", edit_election_path(bf)
     = link_to "vote", vote_election_path(bf)
     = link_to "show result", show_result_election_path(bf)
+    %div
+      %h4 Add code to your view to display the ballot form.
+      %p erb:
+      %pre <%= embed_ballot_form(#{bf.id}) %>
+      %p haml:
+      %pre = embed_ballot_form(#{bf.id})
+  %hr
