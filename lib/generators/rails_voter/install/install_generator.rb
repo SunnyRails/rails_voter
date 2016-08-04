@@ -11,9 +11,9 @@ module RailsVoter
       rake("db:migrate")
     end
 
-    def add_seeds
-      copy_file "seeds.rb", "db/seeds.rb"
-      rake("db:seed")
+    def add_sample_data
+      copy_file "sample_data.rb", "lib/tasks/rails_voter.rake"
+      rake("rails_voter:add_sample_data")
     end
 
     def add_helpers
