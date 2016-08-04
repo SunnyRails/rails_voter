@@ -15,5 +15,9 @@ module RailsVoter
       copy_file "seeds.rb", "db/seeds.rb"
       rake("db:seed")
     end
+
+    def add_helpers
+      copy_file "helpers.rb", "config/initializers/rails_voter_helpers.rb"
+    end
   end
 end
