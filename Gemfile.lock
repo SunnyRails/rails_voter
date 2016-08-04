@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails_voter (0.1.0)
+    rails_voter (0.2.0)
       bootstrap-sass (~> 3.3.6)
       decent_exposure (~> 3.0.0)
       draper (~> 1.3)
