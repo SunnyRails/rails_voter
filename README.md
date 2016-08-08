@@ -13,7 +13,7 @@ Add Rails-Voter gem to your Gemfile:
 Current version  
 gem 'rails_voter', github: 'SunnyRails/rails_voter'  
 
-RubyGems version (0.1.0)
+RubyGems version (0.2.1)
 gem 'rails_voter'  
 ```
 
